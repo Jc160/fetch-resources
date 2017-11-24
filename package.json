@@ -1,0 +1,32 @@
+{
+  "name": "fetch-resources",
+  "version": "1.0.0",
+  "description": "Fetch wrapper based on Angular Resources behaviour",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Fetch",
+    "Angular",
+    "resources",
+    "node",
+    "api",
+    "restful"
+  ],
+  "author": {
+    "name": "Jc160",
+    "email": "jramirez@boxxrd.com",
+    "url": "boxxrd.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jc160/fetch-resources.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "node-fetch": "^1.7.3",
+    "query-string": "^5.0.1"
+  }
+}
