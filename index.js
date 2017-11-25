@@ -14,9 +14,11 @@ const QueryString = require('query-string');
  * @type {Object}
  */
 const HEADERS = {
- 'Accept': 'application/json',
- 'Content-Type': 'application/json',
+ 'Accept': 'application/json'
 }
+
+
+const X_WWW_FORM_URLENCODED = 'application/x-www-form-urlencoded';
 
 
 /**
@@ -172,7 +174,7 @@ function Requester(objConfig={}) {
       let initialConfig = {
         method: objCustomEndpoint.method,
         url: strUrl,
-        headers: (
+        headers: Object.assign(
           {},
           objInternalHeaders,
           objNewConfig.addHeaders
@@ -181,6 +183,7 @@ function Requester(objConfig={}) {
 
       if (hasBody) {
         initialConfig['body'] = objCleanData;
+        initialConfig.headers['Content-Type'] = X_WWW_FORM_URLENCODED;
       }
 
       let objConfig = Object.assign(
