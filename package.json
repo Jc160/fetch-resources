@@ -1,6 +1,6 @@
 {
   "name": "fetch-resources",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fetch wrapper based on Angular Resources behaviour",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,6 @@
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.4",
-    "node-fetch": "^1.7.3",
     "query-string": "^5.0.1"
   }
 }

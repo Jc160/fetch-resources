@@ -1,7 +1,6 @@
 'use strict';
 
 
-const fetch = require('node-fetch');
 const Lodash = require('lodash');
 const QueryString = require('query-string');
 
