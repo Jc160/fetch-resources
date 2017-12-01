@@ -181,7 +181,7 @@ function Requester(objConfig={}) {
       };
 
       if (hasBody) {
-        initialConfig['body'] = objCleanData;
+        initialConfig['body'] = JSON.stringify(objCleanData);
         initialConfig.headers['Content-Type'] = X_WWW_FORM_URLENCODED;
       }
 

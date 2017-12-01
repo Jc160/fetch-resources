@@ -1,6 +1,6 @@
 {
   "name": "fetch-resources",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fetch wrapper based on Angular Resources behaviour",
   "main": "index.js",
   "scripts": {
